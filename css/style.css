@@ -24,6 +24,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
+    height: 100vh;
 }
 
 .container {
@@ -249,12 +250,30 @@ section h2 {
 }
 
 /* Footer */
-footer {
+footer {  
+    width: 100%;
+    display: flex;
+    text-align: center;
     background-color: var(--secondary-color);
     color: var(--white-color);
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
+footer .container a {
+   
+    color: color var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+footer .container a:hover {
+    color: #7e7777;
+    text-decoration: underline;
+}
+
+
 
 /* Responsive */
 @media (max-width: 992px) {
